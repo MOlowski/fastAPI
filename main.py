@@ -12,22 +12,22 @@ app = FastAPI()
 db: List[User] = [
     User(
         id=UUID("0a0037ad-c9d3-4fbf-8aab-f6fd59ece10c"), 
-        first_name='Kamil', 
-        last_name='Nowak',
+        first_name="Kamil", 
+        last_name="Nowak",
         gender=Gender.male,
         roles=[Role.student]
     ),
     User(
         id=UUID("38613877-cd90-4dc9-9e5a-3ed06d9cbfd2"), 
-        first_name='Marcin', 
-        last_name='Nowaczkiewicz',
+        first_name="Marcin",
+        last_name="Nowaczkiewicz",
         gender=Gender.male,
         roles=[Role.admin, Role.user]
     ),
     User(
         id=UUID("38613877-cd90-4dc9-9e5a-3ed06d9cbfd2"), 
-        first_name='Katarzyna', 
-        last_name='Dorsz',
+        first_name="Katarzyna",
+        last_name="Dorsz",
         gender=Gender.female,
         roles=[Role.student, Role.user]
     )
@@ -56,6 +56,7 @@ async def delete_user(user_id: UUID):
         status_code=404,
         detail=f"user with id: {user_id} does not exists"
     )
+
 
 @app.put("/api/v1/users/{user_id}")
 async def change_user(user_update: Change, user_id: UUID):
