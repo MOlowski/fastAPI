@@ -41,7 +41,7 @@ async def root():
 async def fetch_users():
     return db;
 
-@app.post("/api/v1/users")
+@app.post("/api/v1/users", status_code=201)
 async def register_user(user: User):
     db.append(user)
     return {"id": user.id}
@@ -56,7 +56,6 @@ async def delete_user(user_id: UUID):
         status_code=404,
         detail=f"user with id: {user_id} does not exists"
     )
-
 
 @app.put("/api/v1/users/{user_id}")
 async def change_user(user_update: Change, user_id: UUID):
