@@ -12,9 +12,9 @@ from database import Base
 class Bin(Base):
     __tablename__ = "bin"
     id = Column(Integer, primary_key=True)
-    product_id = ForeignKey("item.id")
-    user_id = ForeignKey("user.id")
+    product_id = Column(Integer,ForeignKey("item.id"))
+    user_id = Column(Integer,ForeignKey("user.id"))
     quantity = Column(Integer)
 
-    item = relationship("Item")
-    user = relationship("User")
+    item = relationship("Item", back_populates="bin")
+    user = relationship("User", back_populates="bin")

@@ -7,7 +7,9 @@ from decimal import Decimal
 from products.cruds import get_product
 from accounts.schema import User
 from accounts.models import User
+from database import SessionLocal
 
+db = SessionLocal()
 
 router = APIRouter(
     tags=['Carts'],

@@ -12,7 +12,9 @@ from database import SessionLocal
 from pydantic import BaseModel
 import jwt
 import settings
+from database import SessionLocal
 
+db = SessionLocal()
 
 router = APIRouter(
     tags=['Accounts'], 
@@ -73,7 +75,7 @@ def sign_user(user: schema.UserCreate):
 #user
 #user update
 @router.put("/users/{user_id}", response_model=schema.UserUpdate, status_code=status.HTTP_200_OK)
-def user_update(user_id: int, user: schema.UserUpdate):
+def user_update(user_id: int, user: schema.UserUpdate = Depends(get_current_user)):
     update_user = db.query(models.User).filter(models.User.id==user_id).first()
     update_user.email = user.email
     update_user.age = user.age

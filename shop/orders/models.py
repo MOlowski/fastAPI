@@ -11,16 +11,17 @@ from database import Base
 class Order(Base):
     __tablename__ = "order"
     id = Column(Integer, primary_key=True)
-    product_id = ForeignKey("item.id")
+    product_id = Column(Integer, ForeignKey("item.id"))
     quantity = Column(Integer)
     price = Column(Float)
-    order_id = ForeignKey("orderid.id")
+    order_id = Column(Integer, ForeignKey("orderid.id"))
 
-    orderid = relationship("Orderid")
-    item = relationship("Item")
-    user = relationship("User")
+    orderid = relationship("Orderid", back_populates="order")
+    item = relationship("Item", back_populates="order")
 
 class Orderid(Base):
     __tablename__ = "orderid"
     id = Column(Integer, primary_key=True)
     total_price = Column(Float)
+
+    order = relationship("Order", back_populates="orderid")

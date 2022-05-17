@@ -14,3 +14,6 @@ class Item(Base):
     price = Column(Float)
     description = Column(String)
     image = Column(unique= True)
+
+    order = relationship("Order", back_populates="item")
+    bin = relationship("Bin", back_populates="item")

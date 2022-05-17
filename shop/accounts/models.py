@@ -18,3 +18,5 @@ class User(Base):
     age = Column(Integer)
     is_active = Column(Boolean, default = False)
     is_admin = Column(Boolean, default= False)
+
+    bin = relationship("Bin", back_populates="user")

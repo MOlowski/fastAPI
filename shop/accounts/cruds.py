@@ -1,5 +1,9 @@
 from . import models, schema
 from .utils import Hash
+from database import SessionLocal
+
+db = SessionLocal()
+
 
 def get_user(user_id: int):
     return db.query(models.User).filter(models.User.id == user_id).first()

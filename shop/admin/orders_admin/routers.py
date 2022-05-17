@@ -4,7 +4,9 @@ from orders import cruds, schema, models
 from accounts.authentication import get_current_user_admin
 from starlette.responses import JSONResponse
 from typing import List
+from database import SessionLocal
 
+db = SessionLocal()
 
 router = APIRouter(
     tags=['Admin Accounts'],

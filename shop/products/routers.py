@@ -5,6 +5,10 @@ from . import schema
 from . import cruds
 from . import models
 from typing import List
+from database import SessionLocal
+
+db = SessionLocal()
+
 
 router = APIRouter(
     tags=['Products'],
@@ -16,7 +20,7 @@ router = APIRouter(
 #all
 @router.get("/items", response_model=List[schema.ItemList], status_code=status.HTTP_200_OK)
 def get_all_items():
-    return paginate(db.query(Item))
+    return paginate(db.query(models.Item))
 
 #user
 #get item details

@@ -7,7 +7,10 @@ from accounts.schema import User
 from carts.models import Bin
 from . import cruds
 from . import schema
+from . import models
+from database import SessionLocal
 
+db = SessionLocal()
 
 router = APIRouter(
     tags=['Orders'],

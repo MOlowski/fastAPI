@@ -1,6 +1,10 @@
 from products.models import Item
 from starlette.responses import JSONResponse
 from fastapi import status
+from database import SessionLocal
+
+db = SessionLocal()
+
 
 def change_quantity(product_id: int, quantity: int):
     product = db.query(Item).filter(Item.id==product_id).first()

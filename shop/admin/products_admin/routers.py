@@ -9,6 +9,10 @@ from starlette.responses import JSONResponse
 from werkzeug.utils import secure_filename
 from products import schema, cruds, models
 import uuid, shutil
+from database import SessionLocal
+
+db = SessionLocal()
+
 
 router = APIRouter(
     tags=['Admin Accounts'],

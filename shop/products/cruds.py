@@ -5,6 +5,10 @@ from werkzeug.utils import secure_filename
 from products import schema
 from . import models
 import uuid
+from database import SessionLocal
+
+db = SessionLocal()
+
 
 def get_products(skip: int = 0, limit: int = 100):
     return list(db.query(models.Item).select().offset(skip).limit(limit))
@@ -33,7 +37,7 @@ def upload_image_product(image, product_id):
     filename = f'media/product_galleries/{uuid.uuid1()}_{secure_filename(image.filename)}'
     with open(f'{filename}', 'wb') as buffer:
         shutil.copyfileobj(image.file, buffer)
-    dq.query(models.Item).filter(product=product_id, image=filename).save()
+    db.query(models.Item).filter(product=product_id, image=filename).save()
 
 
 
