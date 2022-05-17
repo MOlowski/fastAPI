@@ -1,7 +1,6 @@
 from . import models, schema
 from .utils import Hash
 
-
 def get_user(user_id: int):
     return db.query(models.User).filter(models.User.id == user_id).first()
 
@@ -21,3 +20,8 @@ def create_user(user: schema.UserCreate):
     db.commit()
     return db_user
     
+def email_check(user:schema.User):
+    db_check = db.query(models.User).filter(models.User.email==user.mail).first()
+    if db_check is not None:
+        return False
+    return True

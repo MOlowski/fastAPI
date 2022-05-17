@@ -72,20 +72,23 @@ def sign_user(user: schema.UserCreate):
 
 #user
 #user update
-@router.put("/users/{user_id}", response_model=schema.User, status_code=status.HTTP_200_OK)
-def user_update(user_id: int, user: schema.User):
+@router.put("/users/{user_id}", response_model=schema.UserUpdate, status_code=status.HTTP_200_OK)
+def user_update(user_id: int, user: schema.UserUpdate):
     update_user = db.query(models.User).filter(models.User.id==user_id).first()
-    update_user.username = user.username
     update_user.email = user.email
     update_user.age = user.age
-
+    if cruds.email_check(user):
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="user with given email already exist"
+        )
     db.commit()
 
     return update_user
 
 
 #change password
-@router.put("users/change_password)")
+@router.put("users/change_password")
 async def change_password(data: schema.ChangePassword, user: schema.User = Depends(get_current_user)):
     if Hash.verify(data.old_password, user.hashed_password):
         user.hashed_password = Hash.bcrypt(data.new_password)
