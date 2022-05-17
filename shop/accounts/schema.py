@@ -24,11 +24,15 @@ class UserCreate(UserBase):
 
 class User(UserBase):
     id: int
-    is_active: int
+    email: str
+    is_active: bool
 
     class Config:
         orm_config = True
 
+class UserUpdate(BaseModel):
+    email: str
+    age: str
 
 class UsernameSchema(BaseModel):
     username: List[str]
