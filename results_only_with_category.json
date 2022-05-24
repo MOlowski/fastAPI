@@ -1,0 +1,993 @@
+{
+    "alcohol": [
+        {
+            "alcohol_id": "tecate",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "tecate",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "beer",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "tecate174-beer",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "bud-light",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "bud-light",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "bud-light174",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "entwine",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "entwine",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "entwine174-cabernet",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 8
+        },
+        {
+            "alcohol_id": "menage-a-trois",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "menage-a-trois",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "menage-a",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 5
+        },
+        {
+            "alcohol_id": "rumchata",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "rumchata",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "rum",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "rumchata174-caribbean",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "corona-extra",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "corona-extra",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "beer",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "corona-extra174",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "bud-light",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "bud-light",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "beer",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "bud-light174",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "absolut",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "absolut",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "vodka",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "absolut174-mandarin",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "chateau-ste-michelle",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "chateau-ste-michelle",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "chateau-ste",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "jim-beam",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "jim-beam",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "whiskey",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "jim-beam",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 7
+        },
+        {
+            "alcohol_id": "heineken",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "heineken",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "heineken174-lager",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "pinnacle",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "pinnacle",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "gin",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "pinnacle-original",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "sammys-beach-bar",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "sammys-beach-bar",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "rum",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "sammys-beach",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 3
+        },
+        {
+            "alcohol_id": "gallo",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "gallo",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "barefoot174-moscato",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 2
+        },
+        {
+            "alcohol_id": "dailys",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "dailys",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "dailys174-frozen",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "patron",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "patron",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "tequila",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "patron174-silver",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 3
+        },
+        {
+            "alcohol_id": "crown-royal",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "crown-royal",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "whiskey",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "crown-royal",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 20
+        },
+        {
+            "alcohol_id": "la-marca",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "la-marca",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "la-marca",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 49
+        },
+        {
+            "alcohol_id": "jim-beam-black",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "jim-beam-black",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "whiskey",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "jim-beam",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 2
+        },
+        {
+            "alcohol_id": "canada-dry",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "canada-dry",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "gin",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "canada-dry",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 2
+        },
+        {
+            "alcohol_id": "coles",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "coles",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "coles-cheese",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "oak-leaf",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "oak-leaf",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "oak-leaf",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 4
+        },
+        {
+            "alcohol_id": "online",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "online",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "biosilk-hydrating",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 7
+        },
+        {
+            "alcohol_id": "pat-obriens",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "pat-obriens",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "pat-obriens",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "great-value",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "great-value",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "great-value",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 22
+        },
+        {
+            "alcohol_id": "trouble-brewing",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "trouble-brewing",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "trouble-brewing",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "budweiser",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "budweiser",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "beer",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "budweiser-lager",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 3
+        },
+        {
+            "alcohol_id": "dirty-sue",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "dirty-sue",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "dirty-sue",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "dailys",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "dailys",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "dailys-margarita",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "jose-cuervo",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "jose-cuervo",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "gin",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "jose-cuervo",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 2
+        },
+        {
+            "alcohol_id": "jack-daniels",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "jack-daniels",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "whiskey",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "jack-daniels",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 34
+        },
+        {
+            "alcohol_id": "jim-beam",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "jim-beam",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "jim-beam",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 7
+        },
+        {
+            "alcohol_id": "duplin",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "duplin",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "duplin-carolina",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 8
+        },
+        {
+            "alcohol_id": "blue-moon",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "blue-moon",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "blue-moon\u00ae",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 48
+        },
+        {
+            "alcohol_id": "great-value",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "great-value",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "gin",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "great-value",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 22
+        },
+        {
+            "alcohol_id": "woodford-reserve",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "woodford-reserve",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "woodford-reserve",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 14
+        },
+        {
+            "alcohol_id": "dsa",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "dsa",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "malbec-fontana",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "belle",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "belle",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "belle-red",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 5
+        },
+        {
+            "alcohol_id": "coco-real",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "coco-real",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "alcohol",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "coco-real",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "silver-spring",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "silver-spring",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "beer",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "silver-spring",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 38
+        },
+        {
+            "alcohol_id": "vintage-wine-estates",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "vintage-wine-estates",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "sh-11/13",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "vintage-wine-estates",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "vintage-wine-estates",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "vintage-wine",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        },
+        {
+            "alcohol_id": "vintage-wine-estates",
+            "payload": {
+                "required": [
+                    {
+                        "keyword": "vintage-wine-estates",
+                        "mode": "c"
+                    }
+                ],
+                "optional": [
+                    {
+                        "keyword": "wine",
+                        "mode": "c"
+                    },
+                    {
+                        "keyword": "sh11/13-vintage",
+                        "mode": "c"
+                    }
+                ],
+                "optionalThreshold": 1
+            },
+            "urls_num": 1
+        }
+    ]
+}

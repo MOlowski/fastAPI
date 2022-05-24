@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv(r"C:\Users\Maciek\Desktop\python\fastAPI\ing\wine_reviews.csv")
+df = pd.read_csv(r"C:\Users\Maciek\Desktop\python\fastAPI\ing\alcohol_reviews.csv")
 df = df[['brand','name']]
 
 
@@ -29,6 +29,6 @@ print(df_tmp.head)
 
 df_tmp = df_tmp.drop_duplicates()
 df_tmp = df_tmp[df_tmp.brand != "nan"]
-df_tmp.to_csv(r"C:\Users\Maciek\Desktop\python\fastAPI\ing\wines.csv")
+df_tmp.to_csv(r"C:\Users\Maciek\Desktop\python\fastAPI\ing\alcohols.csv")
 
 

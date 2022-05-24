@@ -23,18 +23,36 @@ def result_parse(result,Name,payload,matched):
             f_data["alcohol"].append(alcohol)
             f.seek(0)
             json.dump(f_data, f, indent = 4)
-
+        
+        #save only brands and num of matched results
+        with open("brands_with_ulrs_num.json","r+") as file:
+            file_data = json.load(file)
+            brands = {
+                "brand": payload['required'][0]['keyword'],
+                "name": payload['optional'][1]['keyword'],
+                "urls_num": urls_num
+            }
+            file_data["brands"].append(brands)
+            file.seek(0)
+            json.dump(file_data, file, indent = 2)
+        
     return matched
 
 
 def request(Brand, Name, category, URL, headers, optional_threshhold):
     matched_result = 0
-    with open("results.json","w") as f:
+    with open("results.json","w+") as f:
         initalize = {
             "alcohol": []
         }
         json.dump(initalize,f)
-
+    
+    with open("brands_with_ulrs_num.json","w+") as f:
+        initalize = {
+            "brands": []
+        }
+        json.dump(initalize,f)
+    
 
     for i in range(len(Brand)):
         if len(Name[i]) < 5:
@@ -115,13 +133,17 @@ def request(Brand, Name, category, URL, headers, optional_threshhold):
             "optionalThreshold": optional_threshhold
         }
 
-        response = requests.post(
-            URL,
-            data = json.dumps(payload),
-            headers = headers,
-        )
+        try:
+            response = requests.post(
+                URL,
+                data = json.dumps(payload),
+                headers = headers,
+            )
 
-        matched_result = result_parse(response.json(), Name, payload, matched_result)
+            matched_result = result_parse(response.json(), Name, payload, matched_result)
+
+        except:
+           print("some problem")
 
     return f"number of matched alcohols: {matched_result}"
     
